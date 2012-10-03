@@ -26,3 +26,9 @@ Usage
 -----
 
 Simply run ColorPicker.qml with the Qt qmlviewer tool.
+
+License
+-------
+
+This project has been released under the LGPL 3 license.
+Please refer to LICENSE.GPL and LICENSE.LGPL for more information.
