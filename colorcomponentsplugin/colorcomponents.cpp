@@ -170,11 +170,7 @@ QString ColorComponents::fullName() const
     if(alpha() == 1.0)
         return m_color.name();
     else
-    {
-        std::ostringstream oss;
-        oss << std::hex << m_color.rgba();
-        return QString::fromStdString("#" + oss.str());
-    }
+        return QString("#%1").arg(m_color.alpha(), 2, 16, QChar('0')) + m_color.name().mid(1);
 }
 
 bool ColorComponents::isValidColor(const QString& name)
